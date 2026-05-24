@@ -51,7 +51,11 @@ class DecisionCode:
 
 
 class SignalType:
-    """Signal types emitted on the cascade bus."""
+    """Signal types emitted by the protocol's runtime control surface.
+
+    The specific signal-type enumeration and the propagation construction
+    are part of the patent track and are not disclosed in this repository.
+    """
     STOP:       Final = "stop"
     QUARANTINE: Final = "quarantine"
     REVOKE:     Final = "revoke"
@@ -60,7 +64,12 @@ class SignalType:
 
 
 class StateDimension:
-    """The six dimensions of state composed at every authorize call."""
+    """State-dimension labels used by the canonical state vector.
+
+    The specific dimension enumeration, per-dimension state alphabets,
+    and the composition rule used at decision time are part of the
+    patent track and are not disclosed in this repository.
+    """
     LIFECYCLE:  Final = "lifecycle"
     AUTHORITY:  Final = "authority"
     DELEGATION: Final = "delegation"
